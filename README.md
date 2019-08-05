@@ -9,8 +9,8 @@
 3. git clone --branch=master https://github.com/RG22EM/newssl.git
 4. cp newssl/new-ssl.sh new-ssl.sh
 5. bash new-ssl.sh
-6. openssl ciphers|tr ':' '\n'|grep GOST
-7. после перезагрузки сервера убеждаемся, что поддержка ГОСТ установлена
+6. после перезагрузки сервера убеждаемся, что поддержка ГОСТ установлена
+7. openssl ciphers|tr ':' '\n'|grep GOST
 
 После установки пакета openssl 1.1.1x + engine + GOST2012 можно скомпилировать утилиту
 конвертации ключа в формате крипто-про скопированного в корневую папку флэш накопителя
