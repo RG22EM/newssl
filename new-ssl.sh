@@ -51,8 +51,7 @@ cmake -DCMAKE_BUILD_TYPE=Release ..
 cmake --build . --config Release
 sudo make install
 cd ../../..
-sudo cp newssl/new-cfg.txt /usr/local/ssl/openssl.cnf
-#sudo cp newssl/new-cfg.txt /etc/pki/tls/openssl.cnf
+sudo cp new-cfg.txt /usr/local/ssl/openssl.cnf
 sudo cp /usr/local/src/newssl/distr/engine/build/bin/gost.so /usr/lib64/openssl/engines/gost.so
 sudo cp /usr/local/src/newssl/distr/engine/build/bin/gost12sum /usr/lib64/openssl/engines/gost12sum
 sudo cp /usr/local/src/newssl/distr/engine/build/bin/gostsum /usr/lib64/openssl/engines/gostsum
