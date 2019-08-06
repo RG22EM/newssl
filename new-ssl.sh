@@ -7,7 +7,7 @@ exit 1
 
 function prereq() {
 sudo yum install -y epel-release || die "Install EPEL Repo"
-sudo yum install -y git make libtool perl-core wget zlib-devel autoconf cmake3 unzip || die "Install soft"
+sudo yum install -y git make libtool perl-core wget zlib-devel autoconf cmake3 unzip usbutils || die "Install soft"
 sudo ln -s /usr/bin/cmake3 /usr/bin/cmake || dies "Links to cmake3"
 }
 
