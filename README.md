@@ -7,9 +7,7 @@
 1. из каталога cd /usr/local/src: 
 2. yum install git -y
 3. git clone --branch=master https://github.com/RG22EM/newssl.git
-
-4.# cp newssl/new-ssl.sh new-ssl.sh (исправлено, всё делается внутри каталога newssl)
-
+ 4. cd newssl #cp newssl/new-ssl.sh new-ssl.sh (исправлено, всё делается в newssl)
 5. bash new-ssl.sh
 6. после перезагрузки сервера убеждаемся, что поддержка ГОСТ установлена
 7. openssl ciphers|tr ':' '\n'|grep GOST
